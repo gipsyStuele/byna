@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://bosullaban.github.io/INDEX.github.io/ -->
+<html lang="ar"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+    <title>By Str1ker</title>
+</head>
+<body bgcolor="#000000">
+<script>
+    var names = [
+        { name: "[ Str1ker ]", color: "green" },
+        { name: "[ Arabu ]", color: "green" },
+    ];
+
+    var nameIndex = 0;
+
+    function changeNames() {
+        var currentName = names[nameIndex];
+        document.getElementById("name").textContent = currentName.name;
+        document.getElementById("name").style.color = currentName.color;
+        nameIndex = (nameIndex + 1) % names.length;
+    }
+
+    // Change the names every 1 second
+    setInterval(changeNames, 1000);
+</script>
+<p align="center">
+    <img border="0" src="./By Arabu_files/CAP4JI" width="750" height="500">
+</p>
+<p align="center">
+    <font face="Courier" size="6" style="color: #000000;">
+        <span style="color: orange;">Hacked By </span>
+        <span id="name" style="color: green;">[ Str1ker ]</span>
+    </font>
+</p>
+<p align="center">
+    <b>
+<font face="Courier" color="#000000">
+<a href="https://discord.gg/cacat" style="font-size: 24px; color: rgba(4, 0, 255, 0.945); text-decoration: none;">5 euro sau dauna la sv : tirunandrei2.1</a>
+<span style="font-size: 24px; color: rgba(4, 0, 255, 0.945);"></span>
+
+
+</font>
+
+    </b>
+</p>
+
+
+
+
+
+    <title>Hacked by Gangstyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000000;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        h1, h3 {
+            color: #ffffff;
+        }
+
+        #ip-address {
+            color: Orange;
+        }
+
+        #ip-info {
+            font-family: Arial, sans-serif;
+            white-space: pre;
+            color: Orange;
+        }
+
+        .cmd-text-container {
+            position: relative;
+        }
+
+        .cmd-text {
+            color: #000000;
+            font-size: 9px;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            position: absolute;
+            animation: scrollText 20s linear infinite;
+            transform: translateX(100%);
+            -webkit-text-stroke: 1px Orange;
+            text-stroke: 1px Orange;
+        }
+
+        .gray-text {
+            color: #000000;
+            outline: 1px solid #000000;
+        }
+
+        .json-data {
+            font-family: Arial, sans-serif;
+            color: Orange;
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        }
+
+        .json-data span {
+            color: black;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .cmd-text:hover {
+            animation-play-state: paused;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+           /* filter: blur(2px); */
+        }
+
+        /* Hide the audio controls */
+        audio {
+            display: none;
+        }
+    </style>
+
+
+    
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        @keyframes lightning {
+            0% { color: orange; }
+            50% { color: green; }
+            100% { color: white; }
+        }
+
+        .animated-text {
+            animation: lightning 1s linear infinite;
+        }
+    </style>
+
+
+    <h3 class="animated-text">V-am spart baza de date :</h3>
+
+
+    <p id="ip-address">
+        <span style="color: rgb(0, 0, 0);">HOPA IP TAU?: </span>
+        <span id="ip-address-value" style="color: Orange; font-size: 17px;"></span>
+    </p>
+
+    <h3 style="color: rgb(0, 0, 0); animation: flashing 1s infinite;">MS DE IP BOS :</h3>
+    <pre id="ip-info" class="json-data">{
+  "ip": "",
+  "hostname": "",
+  "city": "",
+  "region": "",
+  "country": "",
+  "loc": "",
+  "org": "",
+  "postal": "",
+  "timezone": "",
+  "readme": "https://ipinfo.io/missingauth"
+}</pre>
+    <div class="cmd-text-container" style="position: relative; top: -15px;">
+        <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> Ai luat la muie </div>
+    </div>
+
+    <!-- Hidden audio element with autoplay -->
+    <audio autoplay="" loop="" style="display: none;">
+        <source src="https://www.youtube.com/watch?v=kH-wnDDo6S8" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<video style="width: 100vw; height: 100vh;" controls="" autoplay="" loop="" muted="">
+    <source src="https://el.phncdn.com/pics/gifs/019/868/341/19868341a.webm">
+    Your browser does not support the video element.
+</video>
+
+
+    <script>
+        // JavaScript code to fetch and display the user's IP address and information
+        function fetchIPAndInfo() {
+            fetch('https://api.ipify.org/?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ip-address-value').textContent = data.ip;
+                    return data.ip;
+                })
+                .then(ip => fetch(`https://ipinfo.io/${ip}/json`))
+                .then(response => response.json())
+                .then(ipInfoData => {
+                    document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
+                    document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
+                });
+        }
+
+        // Fetch IP address and information initially
+        fetchIPAndInfo();
+    </script>
+
+
+
+</body></html>
